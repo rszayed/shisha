@@ -1,0 +1,111 @@
+<body>
+
+
+
+  <div class="container">
+    <div class="row">
+
+
+      <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" routerLink="/">ELEMENT STORE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" *ngIf="isuser">
+                <a class="nav-link active" aria-current="page" routerLink="/kalyan">Кальян</a>
+              </li>
+              <li class="nav-item" *ngIf="isuser">
+                <a class="nav-link active" aria-current="page" routerLink="/tabak">Табак</a>
+              </li>
+              <li class="nav-item" *ngIf="isuser">
+                <a class="nav-link active" aria-current="page" routerLink="/ekcec">эксесуари</a>
+              </li>
+              <li class="nav-item" *ngIf="isuser">
+                <a class="nav-link active" aria-current="page" routerLink="/profail">ЛИЧНЫЙ КАБЕНЕТ</a>
+              </li>
+
+
+
+              <li class="nav-item active" *ngIf="isuser"><a class="btn btn-success" (click)="logout()">Sign out</a></li>
+
+
+              <!--<li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>-->
+              <li class="nav-item" style="margin: 5px;">
+                <a class="phone " href="tel:+380959139444"> <img
+                    src="http://www.avaleisure.co.uk/ESW/Images/mail-button.png" alt="..." width="20px" height="15px">
+                  +380959139444</a>
+              </li>
+            </ul>
+            <!--
+            <div class="dropdown">
+              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <p>gh</p>
+
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" routerLink="/regester" *ngIf="!isuser">регистрация</a></li>
+                <li><a class="dropdown-item" routerLink="/news">НОВОСТЕЙ</a></li>
+                <li><a class="dropdown-item" href="#">информация</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" routerLink="/login"*ngIf="!isuser" >Login in</a></li>
+
+              </ul>
+
+            </div>
+           -->
+
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+
+      </nav>
+
+<div style="width: 10px;margin-bottom: 10px;"></div>
+
+                  <div>
+                    <div class="d-inline p-2 bg-dark text-white " >
+                      <a href="#" ><img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        </a>
+                    </div>
+                    <div class="d-inline p-2 bg-dark text-white" >
+                      <a routerLink="/regester" *ngIf="!isuser">регистрация</a>
+                    </div>
+                    <div class="d-inline p-2 bg-dark text-white">
+                      <a routerLink="/news">НОВОСТЕЙ</a>
+                    </div>
+                    <div class="d-inline p-2 bg-dark text-white">
+                      <a href="#">информация</a>
+                    </div>
+                    <div class="d-inline p-2 bg-dark text-white">
+                    <a routerLink="/login" *ngIf="!isuser">Login in</a>
+                  </div>
+                  <div class="d-inline p-2 bg-dark text-white">
+                    <a> <span>карзинка</span>
+                    </a>
+                  </div>
+                  </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+</body>

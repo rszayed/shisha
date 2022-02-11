@@ -1,0 +1,105 @@
+<br>
+<br>
+<div class="container ">
+  <div class="row ">
+
+    {{uid}}
+
+
+    <div class="col-lg-6 text-center">
+      
+        <h3>ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ</h3>
+      <form #f="ngForm" (ngSubmit)="login(f)">
+
+        <div class="form-floating">
+          <input type="email" class="form-control" #emial="ngModel"  name="email" ngModel>
+          <label for="floatingInput"><img
+              src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+              width="15px" height="15px">Ваш e-mail</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" #password="ngModel"  name="password"  ngModel>
+          <label for="floatingPassword"><img
+              src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+              width="15px" height="15px">Пароль</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit"> Войти</button>
+     
+     <div class="alert alert-danger" *ngIf="massageError">{{massageError}}</div>
+      </form>
+    </div>
+    <div class="col-lg-6 text-center">
+      <form>
+
+
+        <h3>ВХОД ДЛЯ ПАРТНЕРОВ</h3>
+
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput"><img
+              src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+              width="15px" height="15px">Ваш e-mail</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword"><img
+              src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+              width="15px" height="15px">Пароль</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit"> Войти</button>
+
+      </form>
+    </div>
+
+
+    <br>
+    <br>
+    
+    <br>
+    <br>
+
+
+
+    <div class="col-lg-6 text-center" style="background-color: rgb(214, 240, 210);border: solid  rgb(104, 103, 103);margin-top: 20px;">
+
+      <h3> НОВЫЙ КЛИЕНТ</h3>
+      <p>Регистрация
+        Создание учетной записи поможет покупать быстрее<br> Вы сможете контролировать состояние заказа<br>
+        а также просматривать заказы сделанные ранее<br>
+        Вы сможете накапливать призовые баллы и получать скидочные купоны<br>
+        А постоянным покупателям мы предлагаем гибкую систему скидок и персональное обслуживание.
+      </p>
+
+      <a routerLink="/regester" class="btn btn-primary">Продолжить</a>
+
+
+    </div>
+
+    <div class="col-lg-6 text-center" style="background-color: rgb(214, 240, 210);border: solid  rgb(104, 103, 103);margin-top: 20px;">
+      <h3>
+        НОВЫЙ ПАРТНЕР</h3>
+      <p>Я не являюсь партнером.
+
+        Нажмите Вперед чтобы создать учетную запись партнера. Обратите внимание<br>
+        что эта учетная запись никак не связана с какой либо учетной записью покупателя!
+      </p>
+
+
+      <a routerLink="/regester" class="btn btn-primary">Продолжить</a>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<br>
+<br>
+<br>
+<div class="container ">
+  <div class="row">
+    <h3 class="text-center">Быстрая регистрация
+      Если Вы уже зарегистрирован<br> перейдите на страницу входа в систему.
+      <br>
+
+      Основная информация
+    </h3>
+  </div>
+</div>
+
+
+<div class="container ">
+  <div class="row ">
+  
+    <div class="col-lg-4"></div>
+
+
+    <div class="col-lg-4 text-center">
+
+      <img class="mb-4"
+        src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+        alt="" width="100" height="100">
+      <h1 class="h3 mb-3 fw-normal">Быстрая регистрация</h1>
+
+    </div>
+    <form #f="ngForm" (ngSubmit)="register(f)">
+      <div class="form-control">
+        <input type="text"  class="form-control" name="name" #name="ngModel" ngModel required>
+        <label for="floatingInput"><img src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+            width="15px" height="15px">Имя
+        </label>
+          
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="form-control" name="famely" #famely="ngModel" ngModel required>
+        <!---->
+        <label for="floatingInput"><img
+            src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+            width="15px" height="15px">Фамилия</label>
+      </div>
+
+      <div class="form-control">
+        <input type="email" class="form-control" name="email" #email="ngModel" ngModel email required>
+        <label for="floatingInput"><img
+            src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+            width="15px" height="15px">Ваш e-mail</label>
+      </div>
+      <div class="form-control">
+        <input type="password" class="form-control" name="password" #password="ngModel" ngModel  required minlength="6" >
+        <label for="floatingPassword">
+          <img src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150301133/37534354-start-icon.jpg"
+            width="15px" height="15px">Пароль</label>
+      </div>
+
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+
+    </form>
+  </div>
+
+</div>

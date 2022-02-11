@@ -1,0 +1,80 @@
+/*.btn-group {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(52, 52, 53);
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 5px #9f9fa0;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}*/
+/*section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+/*.main1 {
+  background-color: blue;
+}*/
+/*.wropper {
+  position: relative;
+  overflow: hidden;
+}
+/*.menu {
+  left: 20;
+  top: 20;
+  width: 10%;
+  height: 100vh;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: cornsilk;
+  transition: 0, 5s;
+  transform: translateX(-0px);
+  z-index: 999;
+}
+.menu-active {
+  transform: translateX(100px);
+}
+.menu-list 
+{
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+}
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  background-color: crimson;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  transform: translateX(110px);
+}*/
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 10%;
+}
+.nav-link {
+  color: aliceblue;
+  text-decoration: none;
+  border-left: 4px solid #378b45;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.rounded-3 {
+  border-radius: 5.3rem !important;
+}
+
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+  position: relative;
+  margin-right: 50px;
+}
